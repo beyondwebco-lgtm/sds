@@ -5,13 +5,13 @@
 > **Phone:** +91 8008730905  
 > **Email:** Diva.sds@outlook.com  
 > **GSTIN:** 37GPWPD8763Q1ZH  
-> **Location:** Plot No 20-1201/2, Indra Kiladri Nagar, Nearby Landmark Gas Godown, Vijayawada, Andhra Pradesh – 520007  
+> **Location:** Plot No: 140/141, Dwarakamai Colony, Bandlaguda Jagir, 500086, Telangana  
 
 ---
 
 ## 🏗️ Project Overview
 
-A professional, modern, fully responsive static website built for **Sri Devarshini Solutions (SDS)**, specialized waterproofing contractors based in Vijayawada, Andhra Pradesh.
+A professional, modern, fully responsive static website built for **Sri Devarshini Solutions (SDS)**, specialized waterproofing contractors based in Bandlaguda Jagir, Telangana and Andhra Pradesh.
 
 The design utilizes a **white and light-grey background** accented with **dark navy blue (#0f2238)** and **vibrant leaf green (#5ea626)** derived directly from the official SDS company logo.
 
@@ -54,7 +54,7 @@ d:\static\SDS\
 1. **Top Contact & Info Bar**:
    - Direct click-to-call for Divakar Gupi (`8008730905`)
    - Clickable email (`Diva.sds@outlook.com`)
-   - Vijayawada, AP location badge
+   - Bandlaguda Jagir, Telangana location badge
    - Official GSTIN badge with one-click copy to clipboard (`37GPWPD8763Q1ZH`)
    - Direct WhatsApp quick link
 
@@ -116,7 +116,7 @@ d:\static\SDS\
    - Actual contact details for Divakar Gupi
    - Click-to-call, email, and WhatsApp chat buttons
    - Enquiry form with validation (Name, Phone Number, Email, Service Required dropdown, Message)
-   - Interactive embedded Google Maps location for Vijayawada, AP (PIN: 520007)
+   - Interactive embedded Google Maps location for Dwarakamai Colony, Bandlaguda Jagir, Telangana (PIN: 500086)
 
 10. **Footer Section**:
     - Dark navy blue background matching reference specifications
