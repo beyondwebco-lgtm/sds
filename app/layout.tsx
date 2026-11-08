@@ -18,7 +18,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sds-waterproofing.vercel.app'),
+  metadataBase: process.env.VERCEL_URL
+    ? new URL(`https://${process.env.VERCEL_URL}`)
+    : new URL('http://localhost:3000'),
   title: 'SDS – Sri Devarshini Solutions | Building Trust, Ensuring Strength',
   description:
     'Sri Devarshini Solutions (SDS) provides expert waterproofing services for residential bungalows, commercial high-rises, precast joints, and structural rehabilitation in Bandlaguda Jagir, Telangana and Andhra Pradesh.',
