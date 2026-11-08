@@ -120,7 +120,7 @@ d:\static\SDS\
 
 10. **Footer Section**:
     - Dark navy blue background matching reference specifications
-    - SDS Logo with white typography and tagline
+    - SDS Complete Waterproofing Solutions logo emblem and typography
     - Quick navigation links
     - Services catalog links
     - Full contact information & GSTIN

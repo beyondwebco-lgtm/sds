@@ -1729,7 +1729,11 @@ ul, ol {
 }
 
 .footer-brand img {
-  height: 52px;
+  height: auto;
+  max-height: 68px;
+  max-width: 250px;
+  width: auto;
+  object-fit: contain;
   margin-bottom: 16px;
 }
 
