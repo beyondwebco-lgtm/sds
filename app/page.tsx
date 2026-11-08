@@ -15,6 +15,7 @@ import ProjectLightbox from '@/components/ProjectLightbox';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import BackToTop from '@/components/BackToTop';
 import ToastNotice from '@/components/ToastNotice';
+import MobileActionBar from '@/components/MobileActionBar';
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
       <FloatingWhatsApp />
       <BackToTop />
       <ToastNotice />
+      <MobileActionBar />
     </>
   );
 }
-
