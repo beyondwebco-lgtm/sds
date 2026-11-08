@@ -1,4 +1,4 @@
-# SDS – Sri Devarshini Solutions Website
+# SDS – Sri Devarshini Solutions Website (Next.js App Router)
 
 > **Tagline:** Building Trust, Ensuring Strength  
 > **Contact Person:** Representative Manager  
@@ -11,140 +11,102 @@
 
 ## 🏗️ Project Overview
 
-A professional, modern, fully responsive static website built for **Sri Devarshini Solutions (SDS)**, specialized waterproofing contractors based in Bandlaguda Jagir, Telangana and Andhra Pradesh.
+A professional, high-performance, modern, fully responsive web application built for **Sri Devarshini Solutions (SDS)**, specialized waterproofing contractors based in Bandlaguda Jagir, Telangana and Andhra Pradesh.
 
-The design utilizes a **white and light-grey background** accented with **dark navy blue (#0f2238)** and **vibrant leaf green (#5ea626)** derived directly from the official SDS company logo.
+Converted from a static site into a **Next.js 15 (App Router)** project with **React 19**, **TypeScript**, and **Framer Motion**, maintaining 100% visual and functional fidelity with the original design tokens, Plus Jakarta Sans typography, and branding.
+
+---
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 15 (App Router, Server & Client Components)
+- **Language:** TypeScript
+- **UI & Runtime:** React 19
+- **Animations:** Framer Motion (respects `prefers-reduced-motion`)
+- **Typography:** `Plus Jakarta Sans` via `next/font/google`
+- **Styling:** CSS3 Design Tokens in `app/globals.css` (No Tailwind or heavy UI library dependencies)
+- **Deployment:** Vercel Ready
 
 ---
 
 ## 📁 Directory Structure
 
 ```text
-d:\static\SDS\
-├── index.html                           # Main Semantic HTML5 Website
-├── README.md                            # Documentation
-├── css/
-│   └── style.css                        # Modern CSS3 with Design Tokens & Responsive Layout
-├── js/
-│   └── main.js                          # Vanilla JavaScript for Navigation, Modals & Interactions
-└── images/
-    ├── sds-logo.png                     # Official SDS Logo (Transparent, High-Res)
-    ├── sds-logo-horizontal.png          # Navbar Optimized Horizontal Logo
-    ├── sds-logo-horizontal-light.png    # Light Text Logo for Dark Header/Footer
-    ├── sds-logo-light.png               # Stacked Light Logo
-    ├── favicon.png                      # Favicon Icon
-    ├── visiting-card.png                # Official Visiting Card Source
-    ├── hero-rain-building.jpg           # Modern Commercial Building in Heavy Rain (Hero)
-    ├── cta-water-droplets.jpg           # Blue Water-Droplets Macro Texture (CTA)
-    ├── about-worker.jpg                 # Certified Waterproofing Worker on Terrace
-    ├── service-bungalow.jpg             # Residential Bungalows Service Card
-    ├── service-commercial.jpg           # High Rise & Commercial Buildings Service Card
-    ├── service-repairs.jpg              # Repairs & Rehabilitation Service Card
-    ├── service-precast.jpg              # Precast Buildings Service Card
-    ├── project-residential-rooftop.jpg  # Waterproofed Residential Rooftops Gallery
-    ├── project-commercial-building.jpg  # Commercial Building Waterproofing Gallery
-    ├── project-industrial-flooring.jpg  # Industrial Flooring Waterproofing Gallery
-    └── project-terrace-waterproofing.jpg# Terrace Waterproofing Gallery
+sds/
+├── app/
+│   ├── globals.css              # Global styles, variables, spacing tokens, animations
+│   ├── layout.tsx               # Root HTML shell, metadata, viewport, font configuration
+│   └── page.tsx                 # Main landing page composing all sections
+├── components/
+│   ├── Header.tsx               # Top contact bar, sticky navbar, mobile drawer
+│   ├── Hero.tsx                 # Hero section with tagline badge, buttons & benefit cards
+│   ├── TrustBar.tsx             # 4 trust & quality proof points
+│   ├── Services.tsx             # 4 service cards with guarantee pillars & modal triggers
+│   ├── About.tsx                # Company overview, 4 key strengths, team photo & badge
+│   ├── Process.tsx              # 5-step waterproofing roadmap
+│   ├── Projects.tsx             # Recent project gallery grid with lightbox preview
+│   ├── CTA.tsx                  # High-conversion banner with direct call & quote triggers
+│   ├── Contact.tsx              # Contact card, GSTIN copy, enquiry form & Google Maps
+│   ├── Footer.tsx               # Footer branding, links, services, contact & copyright
+│   ├── QuoteModal.tsx           # Free site visit quote modal dialog with validation
+│   ├── ServiceModal.tsx         # Detailed service specifications modal
+│   ├── ProjectLightbox.tsx      # High-resolution project image lightbox modal
+│   ├── FloatingWhatsApp.tsx     # Floating WhatsApp quick chat button
+│   ├── BackToTop.tsx            # Smooth scroll back to top button
+│   └── ToastNotice.tsx          # Toast notification system
+├── context/
+│   └── UIContext.tsx            # Global UI state (modals, lightboxes, toasts)
+├── lib/
+│   └── data.ts                  # Structured typed data for services and projects
+├── public/
+│   ├── favicon.png              # Site favicon
+│   └── images/                  # High-resolution project images, banners, and logos
+├── .env.example                 # Environment variables template
+├── .gitignore                   # Standard Next.js gitignore
+├── package.json                 # Next.js, React, TypeScript & Framer Motion dependencies
+├── tsconfig.json                # TypeScript path aliases (@/*)
+└── README.md                    # Project documentation
 ```
 
 ---
 
-## 🌟 Key Sections & Features
+## 🛠️ Local Development & Scripts
 
-1. **Top Contact & Info Bar**:
-   - Direct click-to-call for Representative Manager (`8008730905`)
-   - Clickable email (`Diva.sds@outlook.com`)
-   - Bandlaguda Jagir, Telangana location badge
-   - Official GSTIN badge with one-click copy to clipboard (`37GPWPD8763Q1ZH`)
-   - Direct WhatsApp quick link
-
-2. **Sticky Navigation Bar**:
-   - Official 3D-Embossed SDS Logo featuring the green high-rise architectural emblem, bold brand lettering, and tagline
-   - Smooth navigation links: Home, About Us, Services, Our Process, Projects, Contact
-   - Animated dropdown menu for Services
-   - "Call Now" button with phone icon
-   - "Get a Quote" high-contrast green button
-   - Mobile-optimized responsive hamburger drawer
-
-3. **Hero Section**:
-   - Dramatic background image of a luxury glass-and-concrete high-rise during heavy monsoon rain
-   - Main heading: `Complete Waterproofing Solutions` with "Solutions" highlighted in vibrant green
-   - Action buttons: "Get a Free Site Visit" (triggers instant booking modal) and "Our Services"
-   - 3 Feature benefit cards: **Leak-Proof Protection**, **Long-Lasting Durability**, and **Safe & Eco-Friendly**
-
-4. **Our Services – An Array of Solutions for the Building Segment (2 × 2 Grid)**:
-   - Matches the official reference layout exactly with a clean white background and bold black modern heading
-   - Feature Guarantee Pillars: **10 Years Warranty**, **Qualified Engineer Site Execution**, and **Waterproofing Material Supply**
-   - 4 Illustrated Service Cards with thin light-grey borders and 15px rounded corners:
-     * **Card 1: Residential Bungalows** – Official bungalow illustration with royal blue "View More" button
-     * **Card 2: High Rise & Commercial** – Official commercial high-rise illustration with royal blue "View More" button
-     * **Card 3: Repairs & Rehabilitation** – Official structural repair illustration with royal blue "View More" button
-     * **Card 4: Precast Buildings** – Official precast construction & crane illustration with royal blue "View More" button
-   - Interactive "View More" modals displaying detailed application scope, materials applied, and 10-year warranty certificate info
-
-5. **About Us Section**:
-   - Company background & values
-   - Professional waterproofing technician photograph in safety gear with testing gauge
-   - 4 Company highlights:
-     * **Expert Team** – Skilled & Experienced Professionals
-     * **Quality Materials** – Premium & Durable Products
-     * **On-Time Completion** – Project Delivery as Committed
-     * **Trusted Partner** – For Homes, Businesses & Developers
-
-6. **Our 5-Step Process**:
-   - Visual horizontal roadmap with connecting dashed lines and numbered steps:
-     1. Site Inspection
-     2. Right Solution
-     3. Expert Application
-     4. Quality Check
-     5. Leak-Free & Durable
-
-7. **Recent Projects Gallery**:
-   - High-resolution portfolio cards with zoom-in modal lightbox:
-     * Waterproofed Residential Rooftops
-     * Commercial Building Waterproofing
-     * Industrial Flooring Waterproofing
-     * Terrace Waterproofing
-
-8. **Call-to-Action Section**:
-   - Rich dark navy blue water-droplet glass texture background
-   - Headline: *"Protect Your Property Today!"*
-   - Description: *"Get expert waterproofing solutions for long-lasting protection."*
-   - Green button: *"Request a Quote →"*
-
-9. **Contact Us Section**:
-   - Actual contact details for Representative Manager
-   - Click-to-call, email, and WhatsApp chat buttons
-   - Enquiry form with validation (Name, Phone Number, Email, Service Required dropdown, Message)
-   - Interactive embedded Google Maps location for Dwarakamai Colony, Bandlaguda Jagir, Telangana (PIN: 500086)
-
-10. **Footer Section**:
-    - Dark navy blue background matching reference specifications
-    - SDS Complete Waterproofing Solutions logo emblem and typography
-    - Quick navigation links
-    - Services catalog links
-    - Full contact information & GSTIN
-    - Copyright notice © 2026 SDS – Sri Devarshini Solutions
-
-11. **Interactive Floating Elements**:
-    - Persistent floating WhatsApp chat button with pulsing green glow
-    - Back-to-Top smooth scroll button
-    - Interactive quote request modal
-    - Interactive service details modal
-    - Interactive project lightbox modal
-    - Form submission toast notifications
-
----
-
-## 🚀 How to Run the Website
-
-### Option 1: Direct File Open
-Simply double-click `d:\static\SDS\index.html` or open it with Google Chrome, Microsoft Edge, or Mozilla Firefox.
-
-### Option 2: Local HTTP Server (e.g. Python)
+### 1. Install Dependencies
 ```bash
-cd "d:\static\SDS"
-python -m http.server 8090
+npm install
 ```
-Then visit: `http://localhost:8090/` in your browser.
 
+### 2. Start the Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### 3. Production Build & Static Analysis
+```bash
+npm run build
+```
+
+### 4. Run the Production Server Locally
+```bash
+npm start
+```
+
+---
+
+## 🚢 Deploying to Vercel
+
+1. Commit and push your code to your GitHub repository:
+   ```bash
+   git add .
+   git commit -m "Convert static site to Next.js App Router with TypeScript & Framer Motion"
+   git branch -M main
+   git push -u origin main
+   ```
+
+2. Import into Vercel:
+   - Go to [vercel.com/new](https://vercel.com/new)
+   - Connect your GitHub account and select the **`sds`** repository.
+   - Framework preset will automatically be detected as **Next.js**.
+   - Click **Deploy**.
