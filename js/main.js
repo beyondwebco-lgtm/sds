@@ -189,7 +189,7 @@ const serviceData = {
   },
   precast: {
     title: 'Precast Building Joint Waterproofing',
-    image: 'images/service-precast-illus.png',
+    image: 'images/service-precast-modular.jpg',
     category: 'Precast & Modular Engineering',
     intro: 'State-of-the-art waterproofing systems tailored for modern precast concrete structures, precast facade panels, modular housing, and industrial precast joints.',
     features: [
