@@ -18,11 +18,30 @@ document.addEventListener('DOMContentLoaded', () => {
    ========================================================================== */
 function initNavbar() {
   const navbar = document.querySelector('.navbar');
-  const mobileToggle = document.querySelector('.mobile-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-  const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+  const mobileToggle = document.getElementById('mobileToggle') || document.querySelector('.mobile-toggle');
+  const navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu');
+  const navBackdrop = document.getElementById('navBackdrop') || document.querySelector('.nav-backdrop');
+  const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+  const navLinks = document.querySelectorAll('.drawer-links .nav-link:not(.dropdown-toggle), .nav-menu > .nav-link:not(.dropdown-toggle)');
   const dropdownToggle = document.querySelector('.dropdown-toggle');
   const dropdownParent = document.querySelector('.nav-item-dropdown');
+  const drawerActionBtns = document.querySelectorAll('.mobile-drawer-actions button, .mobile-drawer-actions a');
+
+  function openDrawer() {
+    if (!navMenu) return;
+    navMenu.classList.add('open');
+    if (navBackdrop) navBackdrop.classList.add('active');
+    document.body.classList.add('nav-open', 'nav-locked');
+    if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeDrawer() {
+    if (!navMenu) return;
+    navMenu.classList.remove('open');
+    if (navBackdrop) navBackdrop.classList.remove('active');
+    document.body.classList.remove('nav-open', 'nav-locked');
+    if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
+  }
 
   // Sticky navbar shadow on scroll
   window.addEventListener('scroll', () => {
@@ -38,24 +57,44 @@ function initNavbar() {
   if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', (e) => {
       e.stopPropagation();
-      navMenu.classList.toggle('open');
-      const isOpen = navMenu.classList.contains('open');
-      mobileToggle.innerHTML = isOpen
-        ? `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
-        : `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`;
+      if (navMenu.classList.contains('open')) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
     });
 
-    // Close when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
-        navMenu.classList.remove('open');
+    if (drawerCloseBtn) {
+      drawerCloseBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeDrawer();
+      });
+    }
+
+    if (navBackdrop) {
+      navBackdrop.addEventListener('click', () => {
+        closeDrawer();
+      });
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeDrawer();
       }
     });
 
     // Close menu when a link is clicked
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
+        closeDrawer();
+      });
+    });
+
+    // Close when tapping an action button inside drawer
+    drawerActionBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        closeDrawer();
       });
     });
   }
@@ -63,10 +102,19 @@ function initNavbar() {
   // Mobile dropdown toggle
   if (dropdownToggle && dropdownParent) {
     dropdownToggle.addEventListener('click', (e) => {
-      if (window.innerWidth <= 900) {
+      if (window.innerWidth <= 1024) {
         e.preventDefault();
-        dropdownParent.classList.toggle('mobile-open');
+        const isOpen = dropdownParent.classList.toggle('mobile-open');
+        dropdownToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       }
+    });
+
+    // Also close drawer when dropdown item clicked
+    const dropdownItems = dropdownParent.querySelectorAll('.dropdown-item');
+    dropdownItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        closeDrawer();
+      });
     });
   }
 
