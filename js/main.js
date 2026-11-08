@@ -174,7 +174,7 @@ const serviceData = {
   },
   repairs: {
     title: 'Repairs & Rehabilitation Waterproofing',
-    image: 'images/service-repairs-illus.png',
+    image: 'images/service-repairs-rehab.jpg',
     category: 'Restoration & Rehabilitation',
     intro: 'Specialized diagnostic structural restoration and leak rectification for existing buildings suffering from active leaks, internal dampness, efflorescence, and spalling concrete.',
     features: [
