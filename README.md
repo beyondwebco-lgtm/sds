@@ -1,7 +1,7 @@
 # SDS – Sri Devarshini Solutions Website
 
 > **Tagline:** Building Trust, Ensuring Strength  
-> **Contact Person:** Divakar Gupi  
+> **Contact Person:** Representative Manager  
 > **Phone:** +91 8008730905  
 > **Email:** Diva.sds@outlook.com  
 > **GSTIN:** 37GPWPD8763Q1ZH  
@@ -52,7 +52,7 @@ d:\static\SDS\
 ## 🌟 Key Sections & Features
 
 1. **Top Contact & Info Bar**:
-   - Direct click-to-call for Divakar Gupi (`8008730905`)
+   - Direct click-to-call for Representative Manager (`8008730905`)
    - Clickable email (`Diva.sds@outlook.com`)
    - Bandlaguda Jagir, Telangana location badge
    - Official GSTIN badge with one-click copy to clipboard (`37GPWPD8763Q1ZH`)
@@ -113,7 +113,7 @@ d:\static\SDS\
    - Green button: *"Request a Quote →"*
 
 9. **Contact Us Section**:
-   - Actual contact details for Divakar Gupi
+   - Actual contact details for Representative Manager
    - Click-to-call, email, and WhatsApp chat buttons
    - Enquiry form with validation (Name, Phone Number, Email, Service Required dropdown, Message)
    - Interactive embedded Google Maps location for Dwarakamai Colony, Bandlaguda Jagir, Telangana (PIN: 500086)

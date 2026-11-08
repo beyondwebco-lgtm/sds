@@ -357,7 +357,7 @@ function initContactForm() {
   const form = document.getElementById('enquiryForm');
   const modalForm = document.getElementById('modalQuoteForm');
 
-  setupForm(form, 'Your enquiry has been received! Divakar Gupi / SDS team will call you shortly.');
+  setupForm(form, 'Your enquiry has been received! Our Representative Manager / SDS team will call you shortly.');
   setupForm(modalForm, 'Your site visit request has been sent! We will contact you within 2 hours.');
 
   function setupForm(f, successMsg) {
