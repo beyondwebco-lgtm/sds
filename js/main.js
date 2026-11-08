@@ -159,7 +159,7 @@ const serviceData = {
   },
   commercial: {
     title: 'High Rise & Commercial Building Waterproofing',
-    image: 'images/service-commercial-illus.png',
+    image: 'images/service-commercial-highrise.jpg',
     category: 'Commercial Infrastructure',
     intro: 'Heavy-duty waterproofing solutions designed for corporate towers, shopping malls, hospitals, tech parks, and multi-tenant residential complexes subject to heavy thermal movement and foot traffic.',
     features: [
