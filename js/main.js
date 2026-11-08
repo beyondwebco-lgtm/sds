@@ -144,7 +144,7 @@ function initNavbar() {
 const serviceData = {
   bungalow: {
     title: 'Residential Bungalow Waterproofing',
-    image: 'images/service-bungalow-illus.png',
+    image: 'images/service-bungalow-interior.jpg',
     category: 'Residential Services',
     intro: 'Comprehensive waterproofing systems engineered specifically for luxury bungalows, villas, and independent homes to guarantee 100% leak-proof interiors, terraces, and facades.',
     features: [
