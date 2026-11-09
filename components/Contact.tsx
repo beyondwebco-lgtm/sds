@@ -105,7 +105,7 @@ export default function Contact() {
                     </div>
                     <div className="contact-text-box">
                       <h6>Email Address</h6>
-                      <a href="mailto:Diva.sds@outlook.com">Diva.sds@outlook.com</a>
+                      <a href="mailto:sales@sds.org.in">sales@sds.org.in</a>
                     </div>
                   </div>
 

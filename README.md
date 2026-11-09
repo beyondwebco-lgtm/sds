@@ -3,7 +3,7 @@
 > **Tagline:** Building Trust, Ensuring Strength  
 > **Contact Person:** Representative Manager  
 > **Phone:** +91 9160592929  
-> **Email:** Diva.sds@outlook.com  
+> **Email:** sales@sds.org.in  
 > **GSTIN:** 37GPWPD8763Q1ZH  
 > **Office Address:** Plot No: 140/141, Dwarakamai Colony, Bandlaguda Jagir, 500086, Telangana  
 > **Registered Address:** Plot No 20-1201/2, Indra Kiladri Nagar, Nearby Landmark Gas Godown, Vijayawada, Andhra Pradesh – 520007  
