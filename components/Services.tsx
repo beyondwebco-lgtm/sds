@@ -64,7 +64,7 @@ export default function Services() {
           <Reveal delay={0.08}>
             <div className="service-card-ref">
               <div className="service-card-illus-wrap">
-                <img src="/images/service-bungalow-interior.jpg" alt="Residential Bungalows Waterproofing" width={320} height={180} loading="lazy" />
+                <img src="/images/service-bungalow-illus.png" alt="Residential Bungalows Waterproofing" width={320} height={200} loading="lazy" />
               </div>
               <div className="service-card-content">
                 <h3 className="service-card-title">Residential Bungalows</h3>
@@ -92,7 +92,7 @@ export default function Services() {
           <Reveal delay={0.16}>
             <div className="service-card-ref">
               <div className="service-card-illus-wrap">
-                <img src="/images/service-commercial-highrise.jpg" alt="High Rise & Commercial Waterproofing" width={200} height={200} loading="lazy" />
+                <img src="/images/service-commercial-illus.png" alt="High Rise & Commercial Waterproofing" width={320} height={200} loading="lazy" />
               </div>
               <div className="service-card-content">
                 <h3 className="service-card-title">High Rise &amp; Commercial</h3>
@@ -120,7 +120,7 @@ export default function Services() {
           <Reveal delay={0.24}>
             <div className="service-card-ref">
               <div className="service-card-illus-wrap">
-                <img src="/images/service-repairs-rehab.jpg" alt="Repairs & Rehabilitation Waterproofing" width={320} height={200} loading="lazy" />
+                <img src="/images/service-repairs-illus.png" alt="Repairs & Rehabilitation Waterproofing" width={320} height={200} loading="lazy" />
               </div>
               <div className="service-card-content">
                 <h3 className="service-card-title">Repairs &amp; Rehabilitation</h3>
@@ -148,7 +148,7 @@ export default function Services() {
           <Reveal delay={0.32}>
             <div className="service-card-ref">
               <div className="service-card-illus-wrap">
-                <img src="/images/service-precast-modular.jpg" alt="Precast Buildings Waterproofing" width={320} height={200} loading="lazy" />
+                <img src="/images/service-precast-illus.png" alt="Precast Buildings Waterproofing" width={320} height={200} loading="lazy" />
               </div>
               <div className="service-card-content">
                 <h3 className="service-card-title">Precast Buildings</h3>

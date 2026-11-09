@@ -19,10 +19,10 @@ export default function Footer() {
                 Sri Devarshini Solutions (SDS) is your trusted waterproofing contractor providing long-lasting, leak-proof protection for residential bungalows, commercial high-rises, precast joints, and structural rehabilitation.
               </p>
               <div className="social-links">
-                <a href="https://wa.me/918008730905" target="_blank" rel="noopener noreferrer" className="social-link" title="WhatsApp">
+                <a href="https://wa.me/919160592929" target="_blank" rel="noopener noreferrer" className="social-link" title="WhatsApp">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 </a>
-                <a href="tel:8008730905" className="social-link" title="Call Representative Manager">
+                <a href="tel:9160592929" className="social-link" title="Call Representative Manager">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 </a>
                 <a href="mailto:Diva.sds@outlook.com" className="social-link" title="Email Us">
@@ -112,7 +112,7 @@ export default function Footer() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 <div>
                   <span style={{ fontSize: '0.775rem', color: '#94a3b8', display: 'block' }}>Phone Number</span>
-                  <a href="tel:8008730905">8008730905</a>
+                  <a href="tel:9160592929">9160592929</a>
                 </div>
               </div>
               <div className="footer-contact-item">
@@ -125,8 +125,15 @@ export default function Footer() {
               <div className="footer-contact-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 <div>
-                  <span style={{ fontSize: '0.775rem', color: '#94a3b8', display: 'block' }}>Address</span>
+                  <span style={{ fontSize: '0.775rem', color: '#94a3b8', display: 'block' }}>Office Address</span>
                   <p>Plot No: 140/141, Dwarakamai Colony, Bandlaguda Jagir, 500086, Telangana</p>
+                </div>
+              </div>
+              <div className="footer-contact-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 21h18"></path><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path><path d="M9 9h1"></path><path d="M9 13h1"></path><path d="M9 17h1"></path><path d="M14 9h1"></path><path d="M14 13h1"></path><path d="M14 17h1"></path></svg>
+                <div>
+                  <span style={{ fontSize: '0.775rem', color: '#94a3b8', display: 'block' }}>Registered Address</span>
+                  <p>Plot No 20-1201/2, Indra Kiladri Nagar, Nearby Landmark Gas Godown, Vijayawada, AP – 520007</p>
                 </div>
               </div>
               <div className="footer-contact-item">

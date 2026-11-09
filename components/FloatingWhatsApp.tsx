@@ -3,7 +3,7 @@ import React from 'react';
 export default function FloatingWhatsApp() {
   return (
     <a
-      href="https://wa.me/918008730905?text=Hello%20SDS,%20I%20would%20like%20to%20enquire%20about%20waterproofing%20services"
+      href="https://wa.me/919160592929?text=Hello%20SDS,%20I%20would%20like%20to%20enquire%20about%20waterproofing%20services"
       target="_blank"
       rel="noopener noreferrer"
       className="floating-whatsapp"

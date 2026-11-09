@@ -2,10 +2,11 @@
 
 > **Tagline:** Building Trust, Ensuring Strength  
 > **Contact Person:** Representative Manager  
-> **Phone:** +91 8008730905  
+> **Phone:** +91 9160592929  
 > **Email:** Diva.sds@outlook.com  
 > **GSTIN:** 37GPWPD8763Q1ZH  
-> **Location:** Plot No: 140/141, Dwarakamai Colony, Bandlaguda Jagir, 500086, Telangana  
+> **Office Address:** Plot No: 140/141, Dwarakamai Colony, Bandlaguda Jagir, 500086, Telangana  
+> **Registered Address:** Plot No 20-1201/2, Indra Kiladri Nagar, Nearby Landmark Gas Godown, Vijayawada, Andhra Pradesh – 520007  
 
 ---
 

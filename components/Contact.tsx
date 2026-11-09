@@ -94,7 +94,7 @@ export default function Contact() {
                     </div>
                     <div className="contact-text-box">
                       <h6>Mobile Number</h6>
-                      <a href="tel:8008730905">8008730905</a>
+                      <a href="tel:9160592929">9160592929</a>
                     </div>
                   </div>
 
@@ -109,14 +109,25 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  {/* Address */}
+                  {/* Office Address */}
                   <div className="contact-detail-row">
                     <div className="contact-icon-box">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                     </div>
                     <div className="contact-text-box">
-                      <h6>Company Address</h6>
+                      <h6>Office Address</h6>
                       <p>Plot No: 140/141, Dwarakamai Colony, Bandlaguda Jagir, 500086, Telangana.</p>
+                    </div>
+                  </div>
+
+                  {/* Registered Address */}
+                  <div className="contact-detail-row">
+                    <div className="contact-icon-box">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 21h18"></path><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path><path d="M9 9h1"></path><path d="M9 13h1"></path><path d="M9 17h1"></path><path d="M14 9h1"></path><path d="M14 13h1"></path><path d="M14 17h1"></path></svg>
+                    </div>
+                    <div className="contact-text-box">
+                      <h6>Registered Address</h6>
+                      <p>Plot No 20-1201/2, Indra Kiladri Nagar, Nearby Landmark Gas Godown, Vijayawada, Andhra Pradesh – 520007.</p>
                     </div>
                   </div>
                 </div>
@@ -141,11 +152,11 @@ export default function Contact() {
 
               {/* Quick Actions */}
               <div className="contact-quick-actions">
-                <a href="tel:8008730905" className="btn btn-secondary">
+                <a href="tel:9160592929" className="btn btn-secondary">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                   <span>Click to Call</span>
                 </a>
-                <a href="https://wa.me/918008730905?text=Hello%20Representative%20Manager,%20I%20would%20like%20to%20enquire%20about%20SDS%20Waterproofing%20Services" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+                <a href="https://wa.me/919160592929?text=Hello%20Representative%20Manager,%20I%20would%20like%20to%20enquire%20about%20SDS%20Waterproofing%20Services" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                   <span>WhatsApp Chat</span>
                 </a>

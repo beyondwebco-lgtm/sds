@@ -13,7 +13,7 @@ export const serviceData: Record<string, ServiceItem> = {
   bungalow: {
     key: 'bungalow',
     title: 'Residential Bungalow Waterproofing',
-    image: '/images/service-bungalow-interior.jpg',
+    image: '/images/service-bungalow-illus.png',
     category: 'Residential Services',
     intro: 'Comprehensive waterproofing systems engineered specifically for luxury bungalows, villas, and independent homes to guarantee 100% leak-proof interiors, terraces, and facades.',
     features: [
@@ -29,7 +29,7 @@ export const serviceData: Record<string, ServiceItem> = {
   commercial: {
     key: 'commercial',
     title: 'High Rise & Commercial Building Waterproofing',
-    image: '/images/service-commercial-highrise.jpg',
+    image: '/images/service-commercial-illus.png',
     category: 'Commercial Infrastructure',
     intro: 'Heavy-duty waterproofing solutions designed for corporate towers, shopping malls, hospitals, tech parks, and multi-tenant residential complexes subject to heavy thermal movement and foot traffic.',
     features: [
@@ -45,7 +45,7 @@ export const serviceData: Record<string, ServiceItem> = {
   repairs: {
     key: 'repairs',
     title: 'Repairs & Rehabilitation Waterproofing',
-    image: '/images/service-repairs-rehab.jpg',
+    image: '/images/service-repairs-illus.png',
     category: 'Restoration & Rehabilitation',
     intro: 'Specialized diagnostic structural restoration and leak rectification for existing buildings suffering from active leaks, internal dampness, efflorescence, and spalling concrete.',
     features: [
@@ -61,7 +61,7 @@ export const serviceData: Record<string, ServiceItem> = {
   precast: {
     key: 'precast',
     title: 'Precast Building Joint Waterproofing',
-    image: '/images/service-precast-modular.jpg',
+    image: '/images/service-precast-illus.png',
     category: 'Precast & Modular Engineering',
     intro: 'State-of-the-art waterproofing systems tailored for modern precast concrete structures, precast facade panels, modular housing, and industrial precast joints.',
     features: [
