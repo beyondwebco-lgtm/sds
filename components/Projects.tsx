@@ -17,7 +17,7 @@ export default function Projects() {
             <div className="badge">Our Work</div>
             <h2 className="section-title">Our Recent Projects</h2>
             <p className="section-subtitle">
-              A showcase of our executed waterproofing projects across residential villas, commercial high-rises, and industrial facilities in Andhra Pradesh.
+              A showcase of our executed waterproofing projects across residential villas, commercial high-rises, and industrial facilities in Hyderabad, Telangana.
             </p>
           </div>
         </Reveal>

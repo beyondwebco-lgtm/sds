@@ -386,8 +386,27 @@ function initContactForm() {
       submitBtn.disabled = true;
       submitBtn.innerHTML = `
         <svg class="animate-spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle><path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path></svg>
-        Sending...
+        Opening WhatsApp...
       `;
+
+      const service = f.querySelector('[name="service"]')?.value || 'General Waterproofing Enquiry';
+      const message = f.querySelector('[name="message"]')?.value?.trim() || f.querySelector('[name="address"]')?.value?.trim() || '';
+
+      const lines = [
+        `*New Enquiry - Sri Devarshini Solutions (SDS)*`,
+        ``,
+        `*Name:* ${name}`,
+        `*Phone Number:* ${phoneDigits}`,
+        email ? `*Email:* ${email}` : null,
+        `*Service Required:* ${service}`,
+        message ? `*Message / Project Details:*\n${message}` : null,
+      ].filter(Boolean);
+
+      const waUrl = `https://wa.me/919160592929?text=${encodeURIComponent(lines.join('\n'))}`;
+      const win = window.open(waUrl, '_blank');
+      if (!win || win.closed || typeof win.closed === 'undefined') {
+        window.location.href = waUrl;
+      }
 
       setTimeout(() => {
         submitBtn.disabled = false;
@@ -401,8 +420,8 @@ function initContactForm() {
           document.body.style.overflow = '';
         }
 
-        showToast(successMsg);
-      }, 1000);
+        showToast('Opening WhatsApp to send your enquiry...');
+      }, 800);
     });
   }
 }

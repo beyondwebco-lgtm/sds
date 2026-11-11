@@ -31,7 +31,7 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     const cleanPhone = formData.phone.replace(/\D/g, '');
@@ -40,26 +40,52 @@ export default function Contact() {
       return;
     }
 
+    if (!formData.name.trim()) {
+      showToast('Please enter your name.', 'error');
+      return;
+    }
+
+    if (!formData.service) {
+      showToast('Please select the service required.', 'error');
+      return;
+    }
+
     setIsSubmitting(true);
 
-    // Simulate network delay
-    await new Promise((resolve) => setTimeout(resolve, 1200));
+    const messageLines = [
+      `*New Enquiry - Sri Devarshini Solutions (SDS)*`,
+      ``,
+      `*Name:* ${formData.name.trim()}`,
+      `*Phone Number:* ${cleanPhone}`,
+      formData.email.trim() ? `*Email:* ${formData.email.trim()}` : null,
+      `*Service Required:* ${formData.service}`,
+      formData.message.trim() ? `*Message / Project Details:*\n${formData.message.trim()}` : null,
+    ].filter(Boolean);
 
-    setIsSubmitting(false);
+    const whatsappUrl = `https://wa.me/919160592929?text=${encodeURIComponent(messageLines.join('\n'))}`;
+
+    // Open WhatsApp directly
+    const win = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    if (!win || win.closed || typeof win.closed === 'undefined') {
+      window.location.href = whatsappUrl;
+    }
+
     showToast(
-      `Thank you, ${formData.name}! Your enquiry has been received. Our Representative Manager will contact you shortly.`,
+      `Thank you, ${formData.name}! Opening WhatsApp to send your enquiry...`,
       'success'
     );
 
-    // Reset form
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      service: '',
-      message: '',
-    });
-    setSelectedService('');
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        service: '',
+        message: '',
+      });
+      setSelectedService('');
+    }, 600);
   };
 
   return (
@@ -259,7 +285,7 @@ export default function Contact() {
                   {isSubmitting ? (
                     <>
                       <svg className="animate-spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10" strokeDasharray="32" strokeDashoffset="12"></circle></svg>
-                      <span>Sending Enquiry...</span>
+                      <span>Sending to WhatsApp...</span>
                     </>
                   ) : (
                     <>

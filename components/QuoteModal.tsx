@@ -53,6 +53,25 @@ export default function QuoteModal() {
 
     setIsSubmitting(true);
 
+    const messageLines = [
+      `*Free Site Visit Request - Sri Devarshini Solutions (SDS)*`,
+      ``,
+      `*Name:* ${trimmedName}`,
+      `*Phone Number:* ${phoneDigits}`,
+      email.trim() ? `*Email:* ${email.trim()}` : null,
+      `*Service Required:* ${service}`,
+      address.trim() ? `*Property Location / Address:*\n${address.trim()}` : null,
+    ].filter(Boolean);
+
+    const whatsappUrl = `https://wa.me/919160592929?text=${encodeURIComponent(messageLines.join('\n'))}`;
+
+    const win = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    if (!win || win.closed || typeof win.closed === 'undefined') {
+      window.location.href = whatsappUrl;
+    }
+
+    showToast('Opening WhatsApp to send your site visit request...', 'success');
+
     setTimeout(() => {
       setIsSubmitting(false);
       setName('');
@@ -61,8 +80,7 @@ export default function QuoteModal() {
       setService('Residential Bungalow');
       setAddress('');
       closeQuoteModal();
-      showToast('Your site visit request has been sent! We will contact you within 2 hours.');
-    }, 1000);
+    }, 600);
   };
 
   return (
